@@ -1,4 +1,6 @@
 #ip sanity check
+from ipaddress import ip_address
+
 def check_ip(ip):
 
     ip_array = [int(i) for i in ip.split('.')]

@@ -1,3 +1,4 @@
+from ipaddress import ip_address
 from ip_sanity_check import check_ip
 from mask_sanity_check import check_mask
 
@@ -12,17 +13,21 @@ while mask_sanity == False:
     mask_sanity = check_mask(mask)
     
 print('\nThe IP address ' + ip + ' is written this way in dotted decimal binary:')
-
 ip.split('.')
 print(ip)
-
 print('.'.join([bin(int(x)+256)[3:] for x in ip.split('.')]))
+
+input("Press Enter to continue")
 
 print('\nIf we take out all of the dots (because they are just used for humans) this is the IP address in binary :')
 print(''.join([bin(int(x)+256)[3:] for x in ip.split('.')]))
 
+input("Press Enter to continue")
+
 print('\nThis is the subnet mask ' + mask + ' written in binary: ')
 print(''.join([bin(int(x)+256)[3:] for x in mask.split('.')]))
+
+input("Press Enter to continue")
 
 print("\nIf we compare the IP address to the subnet mask, we can see how the subnet mask is measuring the IP address")
 
