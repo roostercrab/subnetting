@@ -4,7 +4,7 @@ class Calculator:
 
     def __init__(self, master):
         self.master = master
-        master.title("Calculator")
+        master.title("Subnet Calculator")
 
         self.total = 0
         self.entered_number = 0
