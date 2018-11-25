@@ -2,6 +2,7 @@ import tkinter as tk
 from ipaddress import ip_address
 from ip_sanity_check import check_ip
 from mask_sanity_check import check_mask
+from guizero import *
 
 root = tk.Tk()
 
